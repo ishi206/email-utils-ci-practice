@@ -1,7 +1,7 @@
 name: Email Utils Tests
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -22,8 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pytest
+          pip install -r requirements.txt
 
       - name: Run tests
         run: |
-          pytest
+          PYTHONPATH=. pytest
