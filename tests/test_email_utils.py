@@ -23,11 +23,11 @@ def test_email_type():
         is_valid_email(12345)
 
 
-# def test_mask_email():
-#
-#     email = "student@gmail.com"
-#
-#     assert mask_email(email) == "s*****t@gmail.com"
+def test_mask_email():
+
+    email = "student@gmail.com"
+
+    assert mask_email(email) == "s*****t@gmail.com"
 
 
 def test_gmail_domain():
